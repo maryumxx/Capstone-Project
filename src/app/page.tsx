@@ -1,113 +1,352 @@
-import Image from "next/image";
+import Link from "next/link";
+import Header from "./components/header";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 w-full max-w-5xl items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:size-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
+    <main>
+      <Header />
+      {/* Hero Content */}
+      <div className="flex justify-center items-center">
+  <img className="w-full h-auto max-w-[1321px] md:max-h-[850px] object-cover" src="heroimg.png" alt="Hero Image" />
+</div>
+
+<div className="flex justify-center items-center flex-wrap gap-8 mt-8 md:gap-x-24 md:mt-0">
+  <img className="w-[85px] h-[87px]" src="zapier.png" alt="Zapier" />
+  <img className="w-[107px] h-[109px]" src="pipedrive.png" alt="Pipedrive" />
+  <img className="w-[135px] h-[139px]" src="cibbank.png" alt="CibBank" />
+  <img className="w-[63px] h-[65px]" src="z.png" alt="Z" />
+  <img className="w-[98px] h-[101px]" src="burn.png" alt="Burn" />
+  <img className="w-[113px] h-[115px]" src="panda.png" alt="Panda" />
+  <img className="w-[84px] h-[87px]" src="moz.png" alt="Moz" />
+</div>
+
+
+     {/* Top Categories */}
+     <h2 className="text-[32px] font-semibold ml-[200px] mt-10 ">
+        Top Categories
+      </h2>
+      <div className="flex justify-center items-center gap-x-5 mt-10">
+      {/* Card 1 */}
+      <div className="card group  relative">
+        <div className="img relative ">
+          <img className="w-[424px] h-[424px] " src="category.png" alt="" />
+         
+         </div>
+         </div>
+      {/* Card 2 */}
+      <div className="card group  relative">
+        <div className="img relative ">
+          <img className="w-[424px] h-[424px] " src="category-1.png" alt="" />
+         
+         </div>
+         </div>
+     {/* Card 3*/}
+     <div className="card group  relative">
+        <div className="img relative ">
+          <img className="w-[424px] h-[424px] " src="category-2.png" alt="" />
+         
+         </div>
+         </div>
+</div>
+
+{/* Explore */}
+<div className="flex justify-center items-center mt-32 gap-x-5 ">
+<h3 className="text-[34px] font-normal -rotate-90 w-[642px] h-[52px] absolute -ml-[1400px]">EXPLORE NEW AND POPULAR STYLES</h3>
+  <div>
+ 
+    <img className="w-[648px] h-[648px] rounded-lg" src="Image-2.png" alt="" />
+  </div>
+  <div className="">
+    <img className="w-[312px] h-[312px]  mb-5 rounded-lg" src="Image-3.png" alt="" />
+    <img className="w-[312px] h-[312px] rounded-lg " src="card.png" alt="" />
+  </div>
+  <div className="">
+    <img className="w-[312px] h-[312px] mb-5 rounded-lg" src="Image.png" alt="" />
+    <img className="w-[312px] h-[312px] rounded-lg" src="Image.png" alt="" />
+  </div>
+  
+</div>
+
+{/* Our Products */}
+<h2 className="text-[32px] font-semibold text-center mt-[173px] ">
+        Our Products
+      </h2>
+      <div className="flex justify-center items-center gap-x-5 mt-10 ">
+        {/* Card 1 */}
+      <div className="card group  w-80 h-96 relative">
+        <div className="img relative ">
+          <img className="w-[312px] h-[312px] " src="Image.png" alt="" />
+          <div className="flex justify-between -mt-[295px] items-center">
+            <button className="w-[54px] h-[26px] text-[13px] rounded-md  ml-4 bg-green-500 text-white ">
+              New
+            </button>
+          </div>
+          {/* Price n Title */}
+          <div className="flex justify-between items-center">
+            <div className="mt-[280px] ">
+              <h4 className="text-[16px] font-normal text-[#007580]">
+                Library Stool Chair
+              </h4>
+              <h5 className=" mt-2 font-bold">
+                $20{" "}
+                
+              </h5>
+            </div>
+            <div className="w-[44px] h-[44px] mt-[280px] mr-2 rounded-md relative group overflow-hidden flex flex-col items-center bg-gray-400 hover:bg-[#007580] transition-colors duration-300">
+              <img
+                className="w-7 h-7 mt-2 transition-opacity duration-300 group-hover:opacity-0"
+                src="cart.png"
+                alt="Black Cart Icon"
+              />
+              <img
+                className="w-7 h-7 mt-2 ml-2 absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                src="cartwhite.png"
+                alt="White Cart Icon"
+              />
+            </div>
+          </div>
         </div>
       </div>
-
-      <div className="relative z-[-1] flex place-items-center before:absolute before:h-[300px] before:w-full before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-full after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 sm:before:w-[480px] sm:after:w-[240px] before:lg:h-[360px]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+       {/* Card 2 */}
+      <div className="card group  w-80 h-96 relative">
+        <div className="img relative ">
+          <img className="w-[312px] h-[312px] " src="Image-1.png" alt="" />
+          <div className="flex justify-between -mt-[295px] items-center">
+            <button className="w-[54px] h-[26px] text-[13px] rounded-md  ml-4 bg-orange-500 text-white ">
+              Sales
+            </button>
+          </div>
+          {/* Price n Title */}
+          <div className="flex justify-between items-center">
+            <div className="mt-[280px] ">
+              <h4 className="text-[16px] font-normal text-[#007580]">
+                Library Stool Chair
+              </h4>
+              <h5 className=" mt-2 font-bold">
+                $20{" "}
+                <span className="text-gray-300 font-medium line-through text-sm">
+                  $30
+                </span>
+              </h5>
+            </div>
+            <div className="w-[44px] h-[44px] mt-[280px] mr-2 rounded-md relative group overflow-hidden flex flex-col items-center bg-gray-400 hover:bg-[#007580] transition-colors duration-300">
+              <img
+                className="w-7 h-7 mt-2 transition-opacity duration-300 group-hover:opacity-0"
+                src="cart.png"
+                alt="Black Cart Icon"
+              />
+              <img
+                className="w-7 h-7 mt-2 ml-2 absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                src="cartwhite.png"
+                alt="White Cart Icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+       {/* Card 3 */}
+      <div className="card group  w-80 h-96 relative">
+        <div className="img relative ">
+          <img className="w-[312px] h-[312px] " src="Image-2.png" alt="" />
+          
+          {/* Price n Title */}
+          <div className="flex justify-between items-center">
+            <div className="mt-3">
+              <h4 className="text-[16px] font-normal text-[#007580]">
+                Library Stool Chair
+              </h4>
+              <h5 className=" mt-2 font-bold">
+                $20{" "}
+                
+              </h5>
+            </div>
+            <div className="w-[44px] h-[44px] mt-3  mr-2 rounded-md relative group overflow-hidden flex flex-col items-center bg-gray-400 hover:bg-[#007580] transition-colors duration-300">
+              <img
+                className="w-7 h-7 mt-2 transition-opacity duration-300 group-hover:opacity-0"
+                src="cart.png"
+                alt="Black Cart Icon"
+              />
+              <img
+                className="w-7 h-7 mt-2 ml-2 absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                src="cartwhite.png"
+                alt="White Cart Icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+       {/* Card 4 */}
+      <div className="card group  w-80 h-96 relative">
+        <div className="img relative ">
+          <img className="w-[312px] h-[312px] " src="Image-3.png" alt="" />
+          
+          {/* Price n Title */}
+          <div className="flex justify-between items-center">
+            <div className="mt-3">
+              <h4 className="text-[16px] font-normal text-[#007580]">
+                Library Stool Chair
+              </h4>
+              <h5 className=" mt-2 font-bold">
+                $20{" "}
+               
+              </h5>
+            </div>
+            <div className="w-[44px] h-[44px] mt-3 mr-2 rounded-md relative group overflow-hidden flex flex-col items-center bg-gray-400 hover:bg-[#007580] transition-colors duration-300">
+              <img
+                className="w-7 h-7 mt-2 transition-opacity duration-300 group-hover:opacity-0"
+                src="cart.png"
+                alt="Black Cart Icon"
+              />
+              <img
+                className="w-7 h-7 mt-2 ml-2 absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                src="cartwhite.png"
+                alt="White Cart Icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+      
+      <div className="flex justify-center items-center gap-x-5 mt-10  mb-52">
+ {/* Card 5 */}
+      <div className="card group  w-80 h-96 relative">
+        <div className="img relative ">
+          <img className="w-[312px] h-[312px] " src="Image-5.png" alt="" />
+          <div className="flex justify-between -mt-[295px] items-center">
+            <button className="w-[54px] h-[26px] text-[13px] rounded-md  ml-4 bg-green-500 text-white ">
+              New
+            </button>
+          </div>
+          {/* Price n Title */}
+          <div className="flex justify-between items-center">
+            <div className="mt-[280px] ">
+              <h4 className="text-[16px] font-normal text-[#007580]">
+                Library Stool Chair
+              </h4>
+              <h5 className=" mt-2 font-bold">
+                $20{" "}
+                
+              </h5>
+            </div>
+            <div className="w-[44px] h-[44px] mt-[280px] mr-2 rounded-md relative group overflow-hidden flex flex-col items-center bg-gray-400 hover:bg-[#007580] transition-colors duration-300">
+              <img
+                className="w-7 h-7 mt-2 transition-opacity duration-300 group-hover:opacity-0"
+                src="cart.png"
+                alt="Black Cart Icon"
+              />
+              <img
+                className="w-7 h-7 mt-2 ml-2 absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                src="cartwhite.png"
+                alt="White Cart Icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+       {/* Card 6 */}
+      <div className="card group  w-80 h-96 relative">
+        <div className="img relative ">
+          <img className="w-[312px] h-[312px] " src="card.png" alt="" />
+          <div className="flex justify-between -mt-[295px] items-center">
+            <button className="w-[54px] h-[26px] text-[13px] rounded-md  ml-4 bg-orange-500 text-white ">
+              Sales
+            </button>
+          </div>
+          {/* Price n Title */}
+          <div className="flex justify-between items-center">
+            <div className="mt-[280px] ">
+              <h4 className="text-[16px] font-normal text-[#007580]">
+                Library Stool Chair
+              </h4>
+              <h5 className=" mt-2 font-bold">
+                $20{" "}
+                <span className="text-gray-300 font-medium line-through text-sm">
+                  $30
+                </span>
+              </h5>
+            </div>
+            <div className="w-[44px] h-[44px] mt-[280px] mr-2 rounded-md relative group overflow-hidden flex flex-col items-center bg-gray-400 hover:bg-[#007580] transition-colors duration-300">
+              <img
+                className="w-7 h-7 mt-2 transition-opacity duration-300 group-hover:opacity-0"
+                src="cart.png"
+                alt="Black Cart Icon"
+              />
+              <img
+                className="w-7 h-7 mt-2 ml-2 absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                src="cartwhite.png"
+                alt="White Cart Icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+       {/* Card 7 */}
+      <div className="card group  w-80 h-96 relative">
+        <div className="img relative ">
+          <img className="w-[312px] h-[312px] " src="Image-4.png" alt="" />
+          
+          {/* Price n Title */}
+          <div className="flex justify-between items-center">
+            <div className="mt-3">
+              <h4 className="text-[16px] font-normal text-[#007580]">
+                Library Stool Chair
+              </h4>
+              <h5 className=" mt-2 font-bold">
+                $20{" "}
+                
+              </h5>
+            </div>
+            <div className="w-[44px] h-[44px] mt-3  mr-2 rounded-md relative group overflow-hidden flex flex-col items-center bg-gray-400 hover:bg-[#007580] transition-colors duration-300">
+              <img
+                className="w-7 h-7 mt-2 transition-opacity duration-300 group-hover:opacity-0"
+                src="cart.png"
+                alt="Black Cart Icon"
+              />
+              <img
+                className="w-7 h-7 mt-2 ml-2 absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                src="cartwhite.png"
+                alt="White Cart Icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+       {/* Card 8 */}
+      <div className="card group  w-80 h-96 relative">
+        <div className="img relative ">
+          <img className="w-[312px] h-[312px] " src="Image.png" alt="" />
+          
+          {/* Price n Title */}
+          <div className="flex justify-between items-center">
+            <div className="mt-3">
+              <h4 className="text-[16px] font-normal text-[#007580]">
+                Library Stool Chair
+              </h4>
+              <h5 className=" mt-2 font-bold">
+                $20{" "}
+               
+              </h5>
+            </div>
+            <div className=" w-[44px] h-[44px] mt-3 mr-2 rounded-md relative group overflow-hidden flex flex-col items-center bg-gray-400 hover:bg-[#007580] transition-colors duration-300">
+              <img
+                className="w-7 h-7 mt-2 transition-opacity duration-300 group-hover:opacity-0"
+                src="cart.png"
+                alt="Black Cart Icon"
+              />
+              <img
+                className="w-7 h-7 mt-2 ml-2 absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100"
+                src="cartwhite.png"
+                alt="White Cart Icon"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
       </div>
 
-      <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Docs{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Learn{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Templates{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-sm opacity-50">
-            Explore starter templates for Next.js.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className="mb-3 text-2xl font-semibold">
-            Deploy{" "}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
+      <Footer />
     </main>
   );
 }
