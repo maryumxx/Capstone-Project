@@ -8,7 +8,7 @@ export default function Products() {
       <Header />
       <div>
         {/* Our Products */}
-        <h2 className="text-[32px] font-semibold md:ml-[170px] mt-[173px] text-center ">
+        <h2 className="text-[32px] font-semibold  mt-[173px] text-center ">
           All Products
         </h2>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-x-5 mt-10 ml-28 mr-24">
