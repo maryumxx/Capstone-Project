@@ -54,7 +54,7 @@ export default function Header() {
             &#9776;
           </button>
           <Link href="/cart">
-            <div className="w-[120px] h-[44px] bg-white rounded-md flex items-center gap-x-2 justify-center text-[12px]">
+            <div className="w-[120px] h-[44px] ml-3 md:ml-0 bg-white rounded-md flex items-center gap-x-2 justify-center text-[12px]">
               <img className="w-[22px] h-[22px]" src="cart.png" alt="" />
               <p className="font-medium">Cart</p>
               <p className="w-[20px] h-[20px] rounded-full text-[10px] bg-[#007580] text-center text-white flex items-center justify-center">

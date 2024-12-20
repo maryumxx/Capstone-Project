@@ -8,7 +8,7 @@ export default function Faqs() {
       <h1 className="mt-20 text-[36px] font-bold text-center">Question Looks Here</h1>
       <p className="text-center mb-28">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the</p>
       
-      <div className="flex flex-wrap gap-5 mb-5 px-4 md:px-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5 px-4 md:px-20">
         <div className="bg-[#F7F7F7] rounded-lg p-4 flex-1 min-w-[300px]">
           <div className="flex justify-between items-center">
             <h5 className="text-[18px] font-bold mb-4">What types of chairs do you offer?</h5>

@@ -8,7 +8,7 @@ export default function Products() {
       <Header />
       <div>
         {/* Our Products */}
-        <h2 className="text-[32px] font-semibold ml-[170px] mt-[173px] ">
+        <h2 className="text-[32px] font-semibold md:ml-[170px] mt-[173px] text-center ">
           All Products
         </h2>
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-x-5 mt-10 ml-28 mr-24">
@@ -399,8 +399,8 @@ export default function Products() {
       </div>
 
       {/* Newsletter */}
-      <div className=" h-[754px] flex flex-col justify-center bg-[#1E2832] bg-opacity-5 sm:mt-32">
-      <h2 className="text-[50px] font-medium text-center">
+      <div className=" h-[754px] md:flex flex-col justify-center bg-[#1E2832] bg-opacity-5 mt-32 md:pb-10">
+      <h2 className="md:text-[50px] font-medium text-center pt-10 text-xl mb-5 md:mb-10 ">
         Or Subscribe To Our Newsletter
       </h2>
       <div className="flex items-center space-x-4 p-4 max-w-lg mx-auto">
@@ -417,14 +417,16 @@ export default function Products() {
           Submit
         </button>
       </div>
-      <h3 className=" text-[45px] font-medium text-center mt-20">Follow Products And Discounts On Instagram</h3>
-      <div className="grid sm:grid-cols-2 ml-20 md:grid-cols-3 lg:grid-cols-6 justify-center  mt-16 mb-5">
-        <img className="w-[186px] h-[186px]" src="Image-6.png" alt="" />
-        <img className="w-[186px] h-[186px]" src="Image-1.png" alt="" />
-        <img className="w-[186px] h-[186px]" src="Image-5.png" alt="" />
-        <img className="w-[186px] h-[186px]" src="Image.png" alt="" />
-        <img className="w-[186px] h-[186px]" src="Image-2.png" alt="" />
-        <img className="w-[186px] h-[186px]" src="deskchair.jpg" alt="" />
+      <h3 className="text-2xl md:text-[45px] font-medium text-center mt-20">Follow Products And Discounts On Instagram</h3>
+      <div className="flex justify-center mt-16 mb-5">
+        <img className="md:w-[186px] md:h-[186px] w-36 p-1" src="Image-6.png" alt="" />
+        <img className="md:w-[186px] md:h-[186px] w-36 p-1" src="Image-1.png" alt="" />
+        <img className="md:w-[186px] md:h-[186px] w-36 p-1" src="Image-5.png" alt="" />
+        </div>
+        <div className="flex justify-center">
+        <img className="md:w-[186px] md:h-[186px] w-36 p-1" src="Image.png" alt="" />
+        <img className="md:w-[186px] md:h-[186px] w-36 p-1" src="Image-2.png" alt="" />
+        <img className="md:w-[186px] md:h-[186px] w-36 p-1" src="deskchair.jpg" alt="" />
       </div>
       </div>
      
