@@ -122,12 +122,13 @@ export default function Home() {
       </h2>
       <div className="flex justify-center items-center md:gap-x-5 md:mt-10  md:mb-52 gap-x-1 ml-2 mr-2 ">
         {/* Card 1 */}
+        <Link href="/whitechair">
         <div className="card group  w-80 h-96 relative">
           <div className="img relative ">
             <img
               className="md:w-[312px] md:h-[312px] w-[200px] h-[150px] "
               src="Image.png"
-              alt=""
+              alt="rusty white chair"
             />
             <div className="md:flex justify-between -mt-[295px]  items-center hidden">
               <button className="w-[54px] h-[26px] text-[13px] rounded-md md:ml-4 bg-green-500 text-white">
@@ -157,13 +158,15 @@ export default function Home() {
             </div>
           </div>
         </div>
+        </Link>
         {/* Card 2 */}
+        <Link href="/pinkchair">
         <div className="card group  w-80 h-96 relative">
           <div className="img relative ">
             <img
               className="md:w-[312px] md:h-[312px] w-[200px] h-[150px] "
               src="Image-1.png"
-              alt=""
+              alt="pink chair"
             />
             <div className="hidden md:flex justify-between -mt-[295px] items-center">
               <button className="w-[54px] h-[26px] text-[13px] rounded-md  ml-4 bg-orange-500 text-white ">
@@ -198,7 +201,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+        </Link>
         {/* Card 3 */}
+        <Link href="/orangechair">
         <div className="card group  w-80 h-96 relative">
           <div className="img relative ">
             <img
@@ -230,7 +235,9 @@ export default function Home() {
             </div>
           </div>
         </div>
+        </Link>
         {/* Card 4 */}
+        <Link href="/offwhite">
         <div className="card group  w-80 h-96 relative">
           <div className="img relative ">
             <img
@@ -245,7 +252,7 @@ export default function Home() {
                 <h4 className="text-[16px] font-normal text-[#007580]">
                   Library Stool Chair
                 </h4>
-                <h5 className=" mt-2 font-bold">$20 </h5>
+                <h5 className=" mt-2 font-bold">$20</h5>
               </div>
               <div className="md:w-[44px] md:h-[44px] w-12 mt-3 mr-2 rounded-md relative group overflow-hidden flex flex-col items-center bg-gray-400 hover:bg-[#007580] transition-colors duration-300">
                 <img
@@ -262,10 +269,12 @@ export default function Home() {
             </div>
           </div>
         </div>
+        </Link>
       </div>
-
+     
       <div className="flex justify-center items-center md:gap-x-5 md:-mt-28  md:mb-52 gap-x-1 ml-2 mr-2">
         {/* Card 5 */}
+        <Link href="/brownchair">
         <div className="card group  w-80 h-96 relative">
           <div className="img relative ">
             <img
@@ -301,6 +310,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        </Link>
         {/* Card 6 */}
         <div className="card group  w-80 h-96 relative">
           <div className="img relative ">
@@ -375,6 +385,7 @@ export default function Home() {
           </div>
         </div>
         {/* Card 8 */}
+        <Link href="/offwhite">
         <div className="card group  w-80 h-96 relative">
           <div className="img relative ">
             <img
@@ -406,6 +417,7 @@ export default function Home() {
             </div>
           </div>
         </div>
+        </Link>
       </div>
 
       <Footer />

@@ -10,7 +10,7 @@ export default function PinkChair() {
         <div className="flex justify-center mb-10 md:mb-0">
           <img
             className="w-full md:w-[675px] h-auto md:h-auto object-contain"
-            src="Image-1.png"
+            src="Image-3.png"
             alt="Library Stool Chair"
           />
         </div>

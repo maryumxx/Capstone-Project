@@ -2,10 +2,14 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import Link from "next/link";
 
+
+
 export default function Cart() {
+ 
   return (
     <main>
       <Header />
+      
       <div className="p-6 flex flex-col lg:flex-row justify-center gap-x-44 mt-20">
         <div className="space-y-6">
           <h1 className="text-[22px] font-bold mb-4">Bag</h1>

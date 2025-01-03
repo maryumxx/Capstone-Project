@@ -1,7 +1,7 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
 
-export default function PinkChair() {
+export default function WhiteChair() {
   return (
     <main>
       <Header />
@@ -10,7 +10,7 @@ export default function PinkChair() {
         <div className="flex justify-center mb-10 md:mb-0">
           <img
             className="w-full md:w-[675px] h-auto md:h-auto object-contain"
-            src="Image-1.png"
+            src="Image.png"
             alt="Library Stool Chair"
           />
         </div>

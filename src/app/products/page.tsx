@@ -2,7 +2,11 @@ import Header from "../components/header";
 import Footer from "../components/footer";
 import Link from "next/link";
 
+
 export default function Products() {
+
+
+
   return (
     <main>
       <Header />
@@ -11,7 +15,9 @@ export default function Products() {
         <h2 className="text-[32px] font-semibold  mt-[173px] text-center ">
           All Products
         </h2>
+        
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 justify-center items-center gap-x-5 mt-10 ml-28 mr-24">
+        <Link href="/whitechair">
           {/* Card 1 */}
           <div className="card group  w-80 h-96 relative">
             <div className="img relative ">
@@ -27,9 +33,9 @@ export default function Products() {
                   <h4 className="text-[16px] font-normal text-[#007580]">
                     Library Stool Chair
                   </h4>
-                  <h5 className=" mt-2 font-bold">$20 </h5>
+                  <h5 className=" mt-2 font-bold">$20</h5>
                 </div>
-                <div className="w-[44px] h-[44px] mt-[280px] mr-2 rounded-md relative group overflow-hidden flex flex-col items-center bg-[#F0F2F3] hover:bg-[#007580] transition-colors duration-300">
+                <div  className="w-[44px] h-[44px] mt-[280px] mr-2 rounded-md relative group overflow-hidden flex flex-col items-center bg-[#F0F2F3] hover:bg-[#007580] transition-colors duration-300">
                   <img
                     className="w-7 h-7 mt-2 transition-opacity duration-300 group-hover:opacity-0"
                     src="cart.png"
@@ -44,6 +50,7 @@ export default function Products() {
               </div>
             </div>
           </div>
+          </Link>
           {/* Card 2 */}
           <Link href="/pinkchair">
           <div className="card group  w-80 h-96 relative">
@@ -84,6 +91,7 @@ export default function Products() {
           </div>
           </Link>
           {/* Card 3 */}
+          <Link href="/orangechair">
           <div className="card group  w-80 h-96 relative">
             <div className="img relative ">
               <img className="w-[312px] h-[312px] " src="Image-2.png" alt="" />
@@ -111,7 +119,9 @@ export default function Products() {
               </div>
             </div>
           </div>
+          </Link>
           {/* Card 4 */}
+          <Link href="/offwhite">
           <div className="card group  w-80 h-96 relative">
             <div className="img relative ">
               <img className="w-[312px] h-[312px] " src="Image-3.png" alt="" />
@@ -139,10 +149,12 @@ export default function Products() {
               </div>
             </div>
           </div>
+          </Link>
         </div>
 
         <div className="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 ml-28 mr-24 justify-center items-center gap-x-5 mt-10">
           {/* Card 5 */}
+          <Link href="/brownchair">
           <div className="card group  w-80 h-96 relative">
             <div className="img relative ">
               <img className="w-[312px] h-[312px] " src="Image-5.png" alt="" />
@@ -174,6 +186,7 @@ export default function Products() {
               </div>
             </div>
           </div>
+          </Link>
           {/* Card 6 */}
           <div className="card group  w-80 h-96 relative">
             <div className="img relative ">
@@ -435,3 +448,4 @@ export default function Products() {
     </main>
   );
 }
+

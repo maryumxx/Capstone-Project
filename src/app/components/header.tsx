@@ -75,7 +75,7 @@ export default function Header() {
           </Link>
           <Link href="/contact" passHref>
             <p className="hover:text-[#007580] hover:font-semibold hidden lg:block">
-              Shop
+              Contact
             </p>
           </Link>
           <Link href="/products" passHref>
