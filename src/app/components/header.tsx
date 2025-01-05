@@ -57,7 +57,7 @@ export default function Header() {
             <div className="w-[120px] h-[44px] ml-3 md:ml-0 bg-white rounded-md flex items-center gap-x-2 justify-center text-[12px]">
               <img className="w-[22px] h-[22px]" src="cart.png" alt="" />
               <p className="font-medium">Cart</p>
-              <p className="w-[20px] h-[20px] rounded-full text-[10px] bg-[#007580] text-center text-white flex items-center justify-center">
+              <p className="w-[8px] h-[8px] rounded-full mb-2 -ml-1 text-[10px] bg-[#29d4ff] text-center text-[#29d4ff]  flex items-center justify-center">
                 2
               </p>
             </div>
