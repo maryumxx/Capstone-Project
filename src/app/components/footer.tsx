@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Footer() {
   return (
@@ -8,7 +9,7 @@ export default function Footer() {
         {/* Main */}
         <div className="flex-1 flex flex-col items-center md:items-start gap-y-4 mb-10 md:mb-0">
           <div className="flex gap-x-2 items-center">
-            <img src="sofa.png" alt="logo" />
+            <Image src="/sofa.png" alt="logo" width={50} height={50}/>
             <p className="text-[26px] font-medium">Comforty</p>
           </div>
 
@@ -24,14 +25,16 @@ export default function Footer() {
                   key={icon}
                   className="w-[44px] h-[44px] rounded-full relative group flex items-center justify-center hover:ring-2 hover:ring-[#007580] transition-all duration-300"
                 >
-                  <img
+                  <Image
+                  width={500} height={300}
                     className="w-7 h-7 transition-opacity duration-300 group-hover:opacity-0"
-                    src={`${icon}gray.png`}
+                    src={`/${icon}gray.png`}
                     alt="Gray Icon"
                   />
-                  <img
+                  <Image
+                  width={500} height={300}
                     className="w-7 h-7 absolute inset-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 ml-2 mt-2"
-                    src={`${icon}.png`}
+                    src={`/${icon}.png`}
                     alt="Teal Icon"
                   />
                 </div>
@@ -114,7 +117,7 @@ export default function Footer() {
 
         <div className="flex gap-x-5 opacity-45">
           {["mc", "paypal", "american", "visa"].map((payment) => (
-            <img key={payment} className="w-10 h-10" src={`${payment}.png`} alt="" />
+            <Image key={payment} className="w-10 h-10" src={`/${payment}.png`} alt="payment" width={500} height={300}/>
           ))}
         </div>
       </div>

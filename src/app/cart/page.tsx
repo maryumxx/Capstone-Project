@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import Header from "../components/header";
 import Footer from "../components/footer";
+import Image from "next/image";
 
 type Product = {
   id: number;
@@ -20,8 +21,15 @@ export default function Cart() {
     setCart(savedCart);
   }, []);
 
+  const deleteProduct = (productId: number) => {
+    const updatedCart = cart.filter(product => product.id !== productId);
+    setCart(updatedCart);
+    localStorage.setItem("cart", JSON.stringify(updatedCart));
+  };
+
   return (
     <main>
+     
       <Header />
       
       <div className="p-6 flex flex-col lg:flex-row justify-center gap-x-44 mt-20">
@@ -33,7 +41,7 @@ export default function Cart() {
             cart.map((product) => (
               <div key={product.id} className="flex flex-col sm:flex-row items-center justify-between border-b pb-4">
                 <div className="flex items-center w-full">
-                  <img
+                  <Image
                     src={product.imageUrl}
                     alt={product.name}
                     className="w-[150px] h-[150px] object-cover rounded"
@@ -45,8 +53,9 @@ export default function Cart() {
                       <p className="text-sm text-gray-500">Quantity: 1</p>
                     </div>
                     <div className="flex space-x-4 mt-5">
-                      <img className="w-5 h-5" src="heart.png" alt="" />
-                      <img className="w-5 h-5" src="delete.png" alt="" />
+                      <Image className="w-5 h-5" src="heart.png" alt="favorite" />
+                      <Image className="w-5 h-5 cursor-pointer" src="delete.png" alt=""
+                      onClick={() => deleteProduct(product.id)} />
                     </div>
                   </div>
                 </div>

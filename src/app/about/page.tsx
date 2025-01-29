@@ -1,40 +1,38 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function About() {
   return (
     <main>
       <Header />
-      <div className="flex flex-col md:flex-row justify-center gap-y-5 md:gap-x-5 mt-20 px-4 md:px-0">
+      <div className="flex flex-col md:flex-row justify-center md:gap-x-8 mt-20 px-4 md:px-0">
         <div>
-          <img
-            className="relative w-full md:w-[672px] h-auto md:h-[478px] rounded-lg"
-            src="textblock.png"
-            alt=""
-          />
-          <div className="absolute">
-            <h1 className="absolute text-white md:-mt-[415px] bg-[#007580] md:ml-16 text-4xl font-bold ">
+         
+          <div className="">
+            <h1 className=" text-[#007580] text-4xl md:text-7xl font-bold ">
               About Us - Comforty
             </h1>
-            <p className="text-white -mt-[364px] text-lg ml-[51px] px-3  bg-[#007580]">
-              At Comforty, we believe that the right chair can transform <br /> your
-              space and elevate your comfort. Specializing in <br /> ergonomic design,
-              premium materials, and modern <br /> aesthetics, we craft chairs that
-              seamlessly blend style <br /> with functionality.
+            <p className="text-[#007580] w-[400px] md:w-[600px] text-lg mt-3 md:mt-10">
+              At Comforty, we believe that the right chair can transform your
+              space and elevate your comfort. Specializing in ergonomic design,
+              premium materials, and modern aesthetics, we craft chairs that
+              seamlessly blend style with functionality.
             </p>
             <Link href="/products">
-            <button className="bg-white hover:shadow-2xl text-[#007580] p-4 px-8 ml-[65px] mt-[115px] ">
+            <button className="text-white hover:shadow-2xl bg-[#007580] p-4 px-8 rounded-md mt-3 md:mt-5">
               View Collection
             </button>
             </Link>
           </div>
         </div>
         <div>
-          <img
-            className="w-full md:w-[619px] h-auto md:h-[478px] rounded-lg"
+          <Image
+            className="w-full md:w-[619px] h-auto md:h-[619px] rounded-lg mt-5 md:mt-0"
             src="Image.png"
-            alt=""
+            alt="chair"
+            width={200} height={200}
           />
         </div>
       </div>
@@ -44,7 +42,7 @@ export default function About() {
       </h5>
       <div className="flex flex-col sm:flex-row justify-center gap-8 mt-10 px-4 sm:px-0">
         <div className="bg-[#F9F9F9] p-10 flex-1 max-w-[300px] mx-auto sm:mx-0">
-          <img className="w-[24px] h-[24px] mb-3" src="delivery.png" alt="" />
+          <Image width={10} height={10} className="w-[24px] h-[24px] mb-3" src="delivery.png" alt="" />
           <h6 className="text-[20px] font-normal text-[#007580] mb-3">
             Next day as standard
           </h6>
@@ -54,7 +52,7 @@ export default function About() {
           </p>
         </div>
         <div className="bg-[#F9F9F9] p-10 flex-1 max-w-[300px] mx-auto sm:mx-0">
-          <img className="w-[24px] h-[24px] mb-3" src="check.png" alt="" />
+          <Image width={200} height={200} className="w-[24px] h-[24px] mb-3" src="check.png" alt="" />
           <h6 className="text-[20px] font-normal text-[#007580] mb-3">
             Made by the artisans
           </h6>
@@ -64,7 +62,7 @@ export default function About() {
           </p>
         </div>
         <div className="bg-[#F9F9F9] p-10 flex-1 max-w-[300px] mx-auto sm:mx-0">
-          <img className="w-[24px] h-[24px] mb-3" src="Purchase.png" alt="" />
+          <Image width={200} height={200} className="w-[24px] h-[24px] mb-3" src="Purchase.png" alt="" />
           <h6 className="text-[20px] font-normal text-[#007580] mb-3">
             Unbeatable Price
           </h6>
@@ -74,7 +72,7 @@ export default function About() {
           </p>
         </div>
         <div className="bg-[#F9F9F9] p-10 flex-1 max-w-[300px] mx-auto sm:mx-0">
-          <img className="w-[24px] h-[24px] mb-3" src="Sprout.png" alt="" />
+          <Image width={200} height={200} className="w-[24px] h-[24px] mb-3" src="Sprout.png" alt="" />
           <h6 className="text-[20px] font-normal text-[#007580] mb-3">
             Recycled packaging
           </h6>
@@ -89,17 +87,17 @@ export default function About() {
         Our Popular Products
       </h3>
       <div className="flex flex-col md:flex-row justify-center gap-y-10 md:gap-x-10 mt-10 mb-10 px-4 md:px-0">
-        <img
+        <Image width={200} height={200}
           className="w-full md:w-[630px] h-auto md:h-[462px]"
           src="greensofa.png"
           alt=""
         />
-        <img
+        <Image width={200} height={200}
           className="w-full md:w-[305px] h-auto md:h-[462px]"
           src="blackchair.png"
           alt=""
         />
-        <img
+        <Image width={200} height={200}
           className="w-full md:w-[305px] h-auto md:h-[462px]"
           src="bwchair.png"
           alt=""

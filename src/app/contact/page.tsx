@@ -1,5 +1,6 @@
 import Header from "../components/header";
 import Footer from "../components/footer";
+import Image from "next/image";
 
 export default function Contact() {
   return (
@@ -18,7 +19,7 @@ export default function Contact() {
           <div className="space-y-12">
             <div className="flex space-x-4">
               <span className="text-xl text-teal-500">
-                <img className="w-7 h-7" src="map.png" alt="Address" />
+                <Image width={200} height={200} className="w-7 h-7" src="map.png" alt="Address" />
               </span>
               <div>
                 <h3 className="text-2xl font-semibold">Address</h3>
@@ -30,7 +31,7 @@ export default function Contact() {
             {/* Phone */}
             <div className="flex items-start space-x-4">
               <span className="text-xl text-teal-500">
-                <img className="w-7 h-7" src="phone.png" alt="Phone" />
+                <Image width={200} height={200} className="w-7 h-7" src="phone.png" alt="Phone" />
               </span>
               <div>
                 <h3 className="text-2xl font-semibold">Phone</h3>
@@ -44,7 +45,7 @@ export default function Contact() {
             {/* Working Time */}
             <div className="flex space-x-4">
               <span className="text-xl text-teal-500">
-                <img className="w-7 h-7" src="clock.png" alt="Working Time" />
+                <Image width={200} height={200} className="w-7 h-7" src="clock.png" alt="Working Time" />
               </span>
               <div>
                 <h3 className="text-2xl font-semibold">Working Time</h3>
@@ -129,47 +130,7 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <div className="flex flex-col md:flex-row justify-center gap-y-5 md:gap-x-28 h-auto md:h-[270px] bg-[#F4F4F4] items-center mx-4 md:ml-36 md:mr-36 mt-20 p-4 md:p-0">
-        <div className="flex items-center">
-          <div>
-            <img className="w-[60px] h-[60px]" src="trophy.png" alt="High Quality" />
-          </div>
-          <div>
-            <h4 className="text-[25px] font-semibold font-['Poppins'] mb-1 ml-1">
-              High Quality
-            </h4>
-            <p className="text-[20px] font-medium text-[#898989]">
-              Crafted from top materials
-            </p>
-          </div>
-        </div>
-        <div className="flex items-center">
-          <div>
-            <img className="w-[60px] h-[60px]" src="guarantee.png" alt="Warranty Protection" />
-          </div>
-          <div>
-            <h4 className="text-[25px] font-semibold font-['Poppins'] mb-1 ml-1">
-              Warranty Protection
-            </h4>
-            <p className="text-[20px] font-medium text-[#898989]">
-              Over 2 years
-            </p>
-          </div>
-        </div>
-        <div className="flex items-center">
-          <div>
-            <img className="w-[60px] h-[60px]" src="customer-support.png" alt="24/7 Support" />
-          </div>
-          <div>
-            <h4 className="text-[25px] font-semibold font-['Poppins'] mb-1 ml-1">
-              24/7 Support
-            </h4>
-            <p className="text-[20px] font-medium text-[#898989]">
-              Dedicated Support
-            </p>
-          </div>
-        </div>
-      </div>
+      
       <Footer />
     </main>
   );
