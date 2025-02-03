@@ -82,7 +82,7 @@ export default function Products() {
                       ${product.salePrice || product.price}
                     </h5>
                   </div>
-                  X
+                  
                   <div
                     className="md:w-[44px] md:h-[44px] h-10 w-10 md:mt-[300px] mt-52 md:mr-2 rounded-md  bg-[#007580] cursor-pointer"
                     onClick={() => addToCart(product)}
