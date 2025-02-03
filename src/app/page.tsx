@@ -6,6 +6,7 @@ import Featured from "./components/featured";
 import { useState, useEffect } from "react";
 import Products from "./components/products";
 import Image from "next/image";
+import { Suspense } from "react";
 
 export default function Home() {
   
@@ -51,8 +52,11 @@ export default function Home() {
       </div>
 
        {/* Featured*/}
+      <Suspense>
+       <div data-id="featured-data" >
       <Featured/>
-     
+      </div>
+      </Suspense>
 
       {/* Top Categories */}
       <h2 className="text-[32px] font-semibold mt-10 md:mt-52 text-center">
@@ -130,8 +134,9 @@ export default function Home() {
       </div>
 
       {/* Our Products */}
+      <Suspense>
       <Products />
-      
+      </Suspense>
      
       
 

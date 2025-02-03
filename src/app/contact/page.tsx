@@ -19,7 +19,7 @@ export default function Contact() {
           <div className="space-y-12">
             <div className="flex space-x-4">
               <span className="text-xl text-teal-500">
-                <Image width={200} height={200} className="w-7 h-7" src="map.png" alt="Address" />
+                <Image width={200} height={200} className="w-7 h-7" src="/map.png" alt="Address" />
               </span>
               <div>
                 <h3 className="text-2xl font-semibold">Address</h3>
@@ -31,7 +31,7 @@ export default function Contact() {
             {/* Phone */}
             <div className="flex items-start space-x-4">
               <span className="text-xl text-teal-500">
-                <Image width={200} height={200} className="w-7 h-7" src="phone.png" alt="Phone" />
+                <Image width={200} height={200} className="w-7 h-7" src="/phone.png" alt="Phone" />
               </span>
               <div>
                 <h3 className="text-2xl font-semibold">Phone</h3>
@@ -45,7 +45,7 @@ export default function Contact() {
             {/* Working Time */}
             <div className="flex space-x-4">
               <span className="text-xl text-teal-500">
-                <Image width={200} height={200} className="w-7 h-7" src="clock.png" alt="Working Time" />
+                <Image width={200} height={200} className="w-7 h-7" src="/clock.png" alt="Working Time" />
               </span>
               <div>
                 <h3 className="text-2xl font-semibold">Working Time</h3>

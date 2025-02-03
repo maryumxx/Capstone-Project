@@ -39,7 +39,7 @@ export default function Cart() {
             <p>No items in the cart.</p>
           ) : (
             cart.map((product) => (
-              <div key={product.id} className="flex flex-col sm:flex-row items-center justify-between border-b pb-4">
+              <div key={product.id} className="flex flex-col sm:flex-row items-center justify-between border-b pb-4" data-id="addtocart-visibility">
                 <div className="flex items-center w-full">
                   <Image
                     src={product.imageUrl}
@@ -53,8 +53,8 @@ export default function Cart() {
                       <p className="text-sm text-gray-500">Quantity: 1</p>
                     </div>
                     <div className="flex space-x-4 mt-5">
-                      <Image className="w-5 h-5" src="heart.png" alt="favorite" />
-                      <Image className="w-5 h-5 cursor-pointer" src="delete.png" alt=""
+                      <Image className="w-5 h-5" src="heart.png" alt="/favorite" />
+                      <Image className="w-5 h-5 cursor-pointer" src="/delete.png" alt=""
                       onClick={() => deleteProduct(product.id)} />
                     </div>
                   </div>

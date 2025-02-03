@@ -4,6 +4,8 @@ import Link from "next/link";
 import Header from "../components/header";
 import Footer from "../components/footer";
 import Image from "next/image";
+import { Suspense } from "react";
+
 type Product = {
   id: number;
   name: string;
@@ -83,7 +85,7 @@ export default function Products() {
         </select>
       </div>
 
-     
+     <Suspense>
       <div className="ml-2 mb-10 grid grid-cols-2 lg:grid-cols-4 justify-center items-center gap-x-1 md:ml-28 md:mr-24">
         {filteredProducts.map((product) => (
           <Link key={product.id} href={`/products/${product.id}`} passHref>
@@ -111,10 +113,12 @@ export default function Products() {
                     </h5>
                   </div>
                   <div
+                  
                     className="md:w-[44px] md:h-[44px] h-10 w-10 md:mt-[300px] mt-52 md:mr-2 rounded-md  bg-[#007580] cursor-pointer"
                     onClick={() => addToCart(product)}
                   >
                     <Image width={200} height={200}
+                    data-id="add-to-cart-button"
                       className="w-7 h-7 mt-1 ml-1 md:mt-2 md:ml-2"
                       src="/cartwhite.png"
                       alt="White Cart Icon"
@@ -123,10 +127,12 @@ export default function Products() {
                 </div>
               </div>
             </div>
+            
           </Link>
         ))}
+        
       </div>
-
+      </Suspense>
       <Footer />
     </main>
   );
