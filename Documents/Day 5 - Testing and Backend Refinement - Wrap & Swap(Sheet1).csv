@@ -1,0 +1,11 @@
+Test Case ID ,Test Case Description ,Test Steps ,Expected Result ,Actual Result ,Status ,Severity Level ,,
+TC-001 ,"Test Home Page performance, SEO, and best practices using Lighthouse ","1. Open Lighthouse in Chrome DevTools. 2. Run an audit on the Home page. 3. Record scores for Performance, SEO, Accessibility, Best Practices. ","Performance is optimized, and scores are above 90%. ",Score is 71%,Failed ,High,,
+TC-002 ,Test Products Page navigation and performance ,1. Navigate to the Products page. 2. Run Lighthouse audit. 3. Note navigation speed and accessibility. ,"Page loads within 100 ms, with smooth navigation. ",1280ms,Failed ,High,,
+TC-003 ,Test Product Detail (Dynamic) page SEO and best practices ,1. Open a dynamic product detail page. 2. Run Lighthouse and record scores. ,"SEO and accessibility are above 90%, dynamic content loads efficiently. ",Accessibility 96% & SEO 100%,Passed,Medium,,
+TC-004 ,Test About Page accessibility ,1. Run Lighthouse on the About page. 2. Check for any accessibility warnings. ,Page meets WCAG 2.1 standards. ,Meets the standards,Passed,Low ,,
+TC-005 ,Test Contact Page SEO and performance ,1. Open Contact page. 2. Run Lighthouse audit. ,"Contact form loads quickly, and metadata is properly configured for SEO. ",Performance 75% & SEO 100%,Passed,Medium,,
+TC-006 ,Test Cart Page load time and best practices ,1. Add items to the cart. 2. Run Lighthouse audit. 3. Analyze performance. ,Cart updates quickly and follows best coding practices. ,Performance 88% & SEO 100%,Passed,High,,
+TC-007,Test Mobile Responsiveness,"1. Open the site on a mobile device or use Chrome DevTools (F12 > Toggle Device).
+2. Check layout and UI elements.",The site should be fully responsive.,The site is fully responsive,Passed,High,,
+TC-008,Test Page Load Speed,"1. Open each page and measure load time.
+2. Ensure load time is under 2-3 seconds.",Pages should load quickly.,Average Page Load time is 800ms,Passed,Medium,,
