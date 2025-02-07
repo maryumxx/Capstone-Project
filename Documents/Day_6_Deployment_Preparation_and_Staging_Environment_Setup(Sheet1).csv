@@ -1,0 +1,11 @@
+Test Case ID,Test Case Description,Test Steps,Expected Result,Actual Result,Status,Severity Level
+TC001,Functional Testing: Product Listing,Navigate to the product listing page,Products should display correctly,As Expected,Pass,Medium
+TC002,Functional Testing: Search,Enter a search query and check results,Relevant products should appear,As Expected,Pass,High
+TC003,Functional Testing: Cart Operations,Add and remove items from the cart,Cart should update correctly,As Expected,Pass,High
+TC004,Performance Testing: Home Page,Run Lighthouse/GTmetrix analysis on Home Page,Score should be above 90,91,Pass,Medium
+TC005,Performance Testing: Contact Page,Run Lighthouse/GTmetrix analysis on Contact Page,Score should be above 90,99,Pass,Low
+TC006,Performance Testing: About Page,Run Lighthouse/GTmetrix analysis on About Page,Score should be above 90,97,Pass,Low
+TC007,Performance Testing: Products Page,Run Lighthouse/GTmetrix analysis on Products Page,Score should be above 90,74,Fail,High
+TC008,Performance Testing: Product Detail Page,Run Lighthouse/GTmetrix analysis on Product Detail Page,Score should be above 90,79,Fail,High
+TC009,Performance Testing: Cart Page,Run Lighthouse/GTmetrix analysis on Cart Page,Score should be above 90,85,Fail,Medium
+TC010,Security Testing: Input Validation,Enter various inputs (valid and invalid),Should prevent invalid inputs,As Expected,Pass,High
